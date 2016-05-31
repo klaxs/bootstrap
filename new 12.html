@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD><TITLE>Odd Consecutive Dates</TITLE>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE="JavaScript">
+document.write("<table border =1>");
+for(var a=1;a<12;a++)
+{
+  for(var b=1;b<14;b++)
+   {
+      for(var c=1;c<101;c++)
+        {
+           if(a%2==1 && b%2==1 && c%2==1)
+             {
+                if(a+2==b && a+4==c)
+                  document.write("<tr><th>"+a+"/"+b+"/"+c+"</tr></th>");
+              }
+          }
+     }
+}
+document.write("</table>");
+</SCRIPT>
+</BODY>
+</HTML>

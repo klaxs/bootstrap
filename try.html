@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initialscale=1">
+ <title>Spotify Apllication</title>
+<style>
+#div1{
+margin-top:20px;
+}
+
+</style>
+ <!-- Bootstrap -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <body>
+ <div id="div1">
+ <form class="form-horizontal" name="form1" action="" method="post" >
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Area Code:</label>
+    <div class="col-xs-2">
+	<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' 
+	name="p_area" size="3" maxlength="3" placeholder="123" class="form-control" required>
+      <!--input type="email" class="form-control" id="inputEmail3" placeholder="Email"-->
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">First 3 Digits:</label>
+    <div class="col-xs-2">
+	<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' 
+	name="p_first" size="3" maxlength="3" placeholder="456" class="form-control" required>
+      <!--input type="email" class="form-control" id="inputEmail3" placeholder="Email"-->
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Last 4 Digits:</label>
+    <div class="col-xs-2">
+	<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' 
+	name="p_last" size="3" maxlength="4" placeholder="6789" class="form-control" required>
+      <!--input type="email" class="form-control" id="inputEmail3" placeholder="Email"-->
+    </div>
+  </div>
+      <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Cell Phone Provider:</label>
+    <div class="col-xs-2">
+	<Select name="p_providers" class="form-control">
+		<option value="Verizon">Verizon 
+		<option value="AT&T">AT&T 
+		<option value="T-Mobile">T-Mobile 
+	</select>
+  </div>
+  </div>
+  <div class="form-group">
+   <label for="inputEmail3" class="col-sm-2 control-label">Subscription Activation Selection:</label>
+    <div class="radio" >
+    <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Subscribe
+  </label>
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Unsubscribe
+  </label>
+	</div>
+	</div>
+	<input class="btn btn-default" type="submit" value="Submit">
+	<input class="btn btn-default" type="submit" value="Reset">
+	<!--button type="submit" class="btn btn-default">Submit</button-->
+	
+</form>
+</div>
+ </body>
+	
+	
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/
+jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files
+as needed -->
+ <script src="js/bootstrap.min.js"></script>
+ <script>
+ $(".contentContainer").css("min-height",$(window).height());
+ 
+ </script>
+ </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initialscale=1">
+ <title>Spotify Apllication</title>
+
+ <!-- Bootstrap -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <style>
+ .navbar-brand{
+ font-size:1.8em;
+ }
+.img{
+float:left;
+margin-top:14px;
+position:relative;
+}
+#topContainer{
+background-image:url("E:/html5/1.HTML/bootstrap/s2.jpg");
+height:600px;
+width:100%;
+background-size:cover;
+}
+#marginRow{
+margin-top:100px;
+text-align:center;
+}
+#marginRow h1{
+font-size:400%;
+}
+.bold{
+font-size:1.5em;
+}
+.marginTop{
+margin-top:30px;
+}
+.center{
+text-align:center;
+}
+.title{
+margin-top:100px;
+font-size:300%;
+}
+#footer{
+background-color:#80D1FB;
+padding-top:70px;
+width:100%;
+}
+.marginBottom{
+margin-bottom:30px;
+}
+.appimage{
+width:250px;
+}
+ </style>
+ </head>
+ 
+ <body data-spy="scroll" data-target=".collapse">
+	<nav class="navbar navbar-default navbar-fixed-top">
+	 <div class="container">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		 <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+		</button>
+		<img alt="app" class="img" src="E:/html5/1.HTML/bootstrap/s1.png" width="21px" height="21px"/>
+		<a class="navbar-brand" href="#">Spotify</a>
+		
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav">
+	<li class="active">
+	<a href="#topContainer">Home</a></li>
+    <li><a href="#contentContainer">About</a></li>
+	<li><a href="#footer">Download The App</a></li>
+	</ul>
+	<form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+		<div class="form-group">
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-success">Log In</button>
+      </form>
+	</div>
+	</div>
+	
+	</nav>
+	<div class="container contentContainer" id="topContainer">
+	 <div class="row">
+		<div class="col-md-6 col-md-offset-3" id="marginRow">
+		<h1 class="marginTop">Spotify App</h1>
+		<p class="lead">This is why should download this fantastic app.</P>
+		<p class="lead">Some more information about the app.You can go into a little more
+		detail if you want to.</p>
+		<p class="bold marginTop">Interested? Join our mailing list!</p>
+		
+	<form class="marginTop">
+	
+    <div class="input-group">
+      <div class="input-group-addon">@</div>
+    <input type="email" class="form-control" id="exampleInputEmail" 
+	placeholder="Email" >
+	</div> 
+	<button type="submit" class="btn btn-success btn-lg marginTop">Submit</button>
+	</form>
+	</div>
+	</div>
+	 </div>
+	
+	<div class="container contentContainer" id="contentContainer">
+	<div class="row center">
+	<h1 class="title">Why Spotify This Is Awesome</h1>
+	<p class="lead center">Summay of the app's awesome</p>
+	</div>
+	<div class="row marginBottom">
+	<div class="col-md-4 marginTop ">
+	<h2><span class="glyphicon glyphicon-music"></span>Header</h2>
+	<p>A brief description of one of the best features of app is music.
+	Login to know know.A brief description of one of the best features of app is music.
+	Login to know know.</p>
+	<button class="btn btn-success marginTop">Sign Up!</button>
+	</div>
+	
+		<div class="col-md-4 marginTop">
+	<h2><span class="glyphicon glyphicon-off"></span>Header</h2>
+	<p>A brief description of one of the best features of app is music.
+	Login to know know.A brief description of one of the best features of app is music.
+	Login to know know.</p>
+	<button class="btn btn-success marginTop">Sign Up!</button>
+	</div>
+	
+		<div class="col-md-4 marginTop">
+	<h2><span class="glyphicon glyphicon-pencil"></span>Header</h2>
+	<p>A brief description of one of the best features of app is music.
+	Login to know know.A brief description of one of the best features of app is music.
+	Login to know know.</p>
+	<button class="btn btn-success marginTop">Sign Up!</button>
+	</div>
+	</div>
+	</div>
+	<div class="container contentContainer" id="footer">
+	<div class="row">
+	<h1 class="center title">Download the App!</h1>
+	<p class="lead center">Really,why should I download this app?</p>
+	<p class="center"><img src="a1.png" class="appimage"/></p>
+	
+	</div>
+	
+	</div>
+	
+	
+	
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/
+jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files
+as needed -->
+ <script src="js/bootstrap.min.js"></script>
+ <script>
+ $(".contentContainer").css("min-height",$(window).height());
+ 
+ </script>
+ </body>
+</html>

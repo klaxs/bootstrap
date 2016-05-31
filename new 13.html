@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Example 6</title>
+<script language="Javascript">
+rate = 1;
+amt = 100;
+document.write("Rate, % | Rule of 72, years | Actual number of years<br>");
+while (rate <=20) {
+	year = 1
+	while (amt<200){
+	amt = amt*(1+rate/100);
+	year++;
+}
+	r=Math.round(72/rate);
+	document.write("&nbsp"+ rate + "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"
+	+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp");
+	document.write(rate + "&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"
+	+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"
+	+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp");
+	document.write(year-1 + "<br>");
+	rate++;
+	year = 1;
+	amt = 100;
+}
+</script>
+</head>
+<body>
+</body>
+</html>

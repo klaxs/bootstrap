@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script >
+	function sort(form){
+	var a1=form.first.value;
+	var b1=form.second.value;
+	var c1=form.third.value;
+	var a11=parseFloat(a1);
+	var b22=parseFloat(b1);
+	var c33=parseFloat(c1);
+	var ranking = [a11,b22,c33];
+	
+	ranking.sort(function(a,b){return a-b});
+	ranking.reverse();
+	document.write("The largest number is:" +ranking[0]+ "<br>");
+	document.write("The second largest number is:" +ranking[1]+ "<br>");
+	document.write("The smallest number is:" +ranking[2]+ "<br>");
+	}
+	</script>
+	</head>
+	<body>
+	<form OnSubmit="return sort(this)">
+	Enter any three numbers:<br>
+	<input type="text" name="first" size=5><br>
+	<input type="text" name="second" size=5><br>
+	<input type="text" name="third" size=5><br>
+	<input type="submit" value="Rank the numbers!" id="demo" onClick="sort(this.form)">
+	</form>
+	</body>
+	
+</html>
